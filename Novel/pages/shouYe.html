@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head id="head">
+		<meta charset="utf-8">
+		<title></title>
+		<script src="../js/Json.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<script src="../js/vue.min.js"></script>
+		<script src="../js/jquery-3.4.1.min.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_1457236_deheymgqy0r.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shouYe.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="col-lg-3 logo">
+				<a href="#" id="jiantou">
+					<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4122354006,1295273067&fm=26&gp=0.jpg">
+				</a>
+			</div>
+			<div class="col-lg-6 text">
+				<input type="text" class="form-control" id="serch"  placeholder="搜索作者相关书籍"/>
+			    <button class="btn btn-danger" onclick="Search()"><i class="iconfont icon-sou"></i></button>
+				<ul class="serch" id="serchbig" onmouseleave="Searchout()"></ul>
+			</div>
+			<div class="col-lg-3">
+				<p class="myshujia"><a href="#"><i class="iconfont icon-shu"></i>&nbsp;&nbsp;我的书架</a></p>
+			</div>
+		</div>
+		<div class="container imggg">
+			<a href="http://cpgame.qd.game.qidian.com/Home/Index/directLogin/name/gjqt2/way/1?qd_game_key=gjqt21200x60.jpg&qd_dd_p1=41878">
+				<img src="https://img2.qidian.com/upload/gamesy/2019/10/08/20191008180140tkg2kmwac0.jpg" />
+			</a>
+		</div>
+		<div class="container ">
+			<div class="nav">
+				<ul class="nav navbar-nav navbar-left col-lg-12">
+					<li><a href="#">玄幻</a></li>
+					<li><a href="#">言情</a></li>
+					<li><a href="#">都市</a></li>
+					<li><a href="#">武侠</a></li>
+					<li><a href="#">历史</a></li>
+					<li><a href="#">悬疑</a></li>
+					<li class="dropdown navbar-right"><a href="#" class="dropdown-toggle" data-toggle="dropdown">查看更多
+					<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu flei">
+						<li>
+							<a href="https://www.apiopen.top/novelApi">军事</a>
+							<a href="">魔幻</a>
+							<a href="">网游</a>
+							<a href="">推理</a>
+							<a href="">科幻</a>
+							<a href="">穿越</a>
+							<a href="">修真</a>
+							<a href="">励志</a>
+						</li>
+					</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container beijing" id="row">
+			<div class="row">
+				<div class="col-lg-6">
+					<div id="ceg" class="carousel slide">
+						<ol class="carousel-indicators">
+							<li data-toggle="#ceg" data-slide-to="0" class="active"></li>
+							<li data-toggle="#ceg" data-slide-to="0" ></li>
+							<li data-toggle="#ceg" data-slide-to="0" ></li>
+							<li data-toggle="#ceg" data-slide-to="0" ></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="item active lunb">
+								<img class="lunboimg" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1250100151,4194159759&fm=26&gp=0.jpg" />
+								<div class="carousel-caption">
+									<h4>微微一笑很倾城(豪华典藏版)</h4>
+									<p>作者：顾漫</p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="lunboimg" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4153871755,2064104217&fm=26&gp=0.jpg" />
+								<div class="carousel-caption">
+									<h4>夏至未至</h4>
+									<p>作者：郭敬明</p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="lunboimg" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=379762653,512706859&fm=15&gp=0.jpg"/>
+								<div class="carousel-caption">
+									<h4>仙侠奇缘之花千骨</h4>
+									<p>作者：Fresh果果</p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="lunboimg" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=83122463,2738510953&fm=15&gp=0.jpg"/>
+								<div class="carousel-caption">
+									<h4>仙剑奇侠传</h4>
+									<p>作者：宇文夙</p>
+								</div>
+							</div>
+						</div>
+						<a class="left carousel-control" href="#ceg" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left "></span>
+						</a>
+						<a class="right carousel-control" href="#ceg" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+				<a class="col-lg-3 guangg" href="https://bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/7eaa8bd8fc72d4f536c17be887df8238.png">
+					<img class="gg" src="https://bossaudioandcomic-1252317822.image.myqcloud.com/activity/document/7eaa8bd8fc72d4f536c17be887df8238.png" />
+					<span class="btn btn-danger">点击</span>
+				</a>
+				<a class="col-lg-3 guangg" href="http://cpgame.qd.game.qidian.com/Home/Index/directLogin/name/gjqt2/way/1?qd_game_key=gjqt2180x140.png&qd_dd_p1=41879">
+					<img class="gg" src="https://img1.qidian.com/upload/gamesy/2019/10/08/20191008180130u5mb3omiik.png" />
+					<span class="btn btn-danger">点击</span>
+				</a>
+			</div>
+		</div>
+		<div class="container" id="tuij">
+			<p class="jptj">精品推荐.......</p>
+			<div class="main">
+				<div class="col-lg-3" v-for="i in index" >
+					<div class="thumbnail">
+						<img src="http://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/p/file_digitaling_com/25a5b08ce4906694e93fa481eda6d30d.gif" class="book_cover" />
+						<div class="caption">
+							<h3 class="bookname">加载中。。</h3>
+							<p class="first_cate_name">请稍后</p>
+							<a href="#" class="author_name"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="btn btn-success btua" onclick="loadXMLDoc()">换一换</a>
+		</div>
+		
+		<div class="container top" id="buttom">
+			<p class="jptj">更多推荐.......</p>
+			<ul class="media-list bookxq" id="bookxq" v-for="item in bookname">
+				  <li class="media">
+					    <a class="media-left shu  media-middle">
+							<img class="bookimg" id="bookimg" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4059038595,1057123296&fm=26&gp=0.jpg" alt="" />
+						</a>
+						<div class="media-body book">
+								<h2 class="media-header bookname2" id="bookname">{{ item }}</h2>
+								<p class="media-heading buttom-autor"></p>
+								<p class="media-heading buttom-dasc" id="desc" onclick="jianjie()"></p>
+								<button type="button" class="btn btn-success btnn">点击查看相关</button>
+						</div>
+				</li>
+			</ul>
+		</div>
+		<div class="container" >			
+			<a href="#jiantou" class="jiantou"><i class="iconfont icon-jianyou-shangx"></i></a>
+		</div>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/shouYe.js"></script>
+	</body>
+</html>

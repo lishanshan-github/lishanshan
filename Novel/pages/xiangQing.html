@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/xiangQing.css"/>
+		<script src="../js/Json.js"></script>
+		<script src="../js/vue.min.js"></script>
+		<script src="../js/jquery-3.4.1.min.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+		<script src="../js/xiangQing.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<div class="col-lg-3 logo">
+					<a href="#">
+						<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4122354006,1295273067&fm=26&gp=0.jpg">
+					</a>
+				</div>
+				<div class="nav">
+					<ul class="nav navbar-nav navbar-left col-lg-9">
+						<li><a href="#">玄幻</a></li>
+						<li><a href="#">言情</a></li>
+						<li><a href="#">都市</a></li>
+						<li><a href="#">武侠</a></li>
+						<li><a href="#">历史</a></li>
+						<li><a href="#">悬疑</a></li>
+						<li class="navbar-right fanh"><a href="shouYe.html">回到首页</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="big"></div>
+		<div class="container main" id="tuij">
+			 <ul class="media-list bookxq" id="bookxq">
+				  <li class="media">
+					    <a class="media-left  media-middle">
+							<img class="bookimg" id="bookimg" src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4059038595,1057123296&fm=26&gp=0.jpg" alt="" />
+						</a>
+						<div class="media-body book">
+								<h2 class="media-header" id="bookname"></h2>
+								<p class="media-heading" id="autor"></p>
+								<p class="media-heading" id="desc" onclick="jianjie()"></p>
+								<button type="button" class="btn btn-success btnn" onclick="yuedu()">点击阅读小说</button>
+						</div>
+				</li>
+			</ul>
+			<div class="container">
+				<p class="jptj" id="autor-xg">猜你喜欢.......</p>
+			</div>
+			<div class="col-lg-3" v-for="i in index" >
+				<div class="thumbnail">
+					<img src="http://tc.sinaimg.cn/maxwidth.2048/tc.service.weibo.com/p/file_digitaling_com/25a5b08ce4906694e93fa481eda6d30d.gif
+					" class="book_cover" />
+					<div class="caption">
+						<h3 class="book_name">加载中.....</h3>
+						<p class="first_cate_name"></p>
+						<a href="#" class="author_name"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

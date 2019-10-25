@@ -1,0 +1,227 @@
+*{
+	margin: 0;padding: 0;
+}
+.logo img{
+	height: 100px;
+}
+.shousuo{
+	line-height: 75px;
+}
+.imggg{
+	margin-top: 20px;
+}
+.beijing{
+	margin-top: 20px;
+	margin-right: 0;
+}
+.beijing a img{
+	width: 260px;
+	display: inline-block;
+}
+.beijing span{
+	cursor: pointer;
+}
+.beijing img{
+	height: 300px;
+	border: 1px solid;
+}
+.imggg img{
+	width:100%;
+}
+.myshujia a{
+    width: 100px;
+    height: 40px;
+	border: 1px black solid;
+	margin-top: 25px;
+	line-height: 40px;
+	text-align: center;
+	float: right;
+	color: black;
+}
+.myshujia i{
+	color: brown;
+}
+.nav{
+	background: rgba(255,0,0,0.1);
+	margin-top: 1px;
+}
+.nav li{
+	width: 100px;
+	text-align: center;
+}
+.flei{
+	min-width: 100px !important;
+	text-align: center;
+}
+.jptj{
+	width: 100%;
+	height: 80px;
+	color: rgba(255,0,0,0.9);
+	text-align: center;
+	line-height: 80px;
+	font-size: 20px;
+}
+.bookname{
+	white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+	font-size: 20px;
+}
+.author_name{
+	font-size: 12px;
+}
+.gg{
+	width: 100%;
+}
+.btua{
+	margin-left: 92.5%;
+}
+.text{
+	position: relative;
+}
+.text>input{
+	width: 300px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 150px;
+}
+.text>button{
+	margin-top: 29px;
+	margin-left: 10px;
+	width: 60px;
+	height: 35px;
+}
+.serch{
+	position: absolute;
+	width: 360px;
+	background: darkcyan;
+	margin-top: 10px;
+	margin-left: 155px;
+	z-index: 999;
+	background: white;
+	border-radius: 5px 5px 5px;
+	overflow: hidden;
+	list-style: none;
+}
+.serch>li{
+	border-bottom: 0.5px rgba(255,0,0,0.6) solid;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 50px;
+	cursor: pointer;
+	color: skyblue;
+}
+.serch>li:hover{
+	color: red;
+}
+.lunbtu{
+	width: 100%;
+}
+.slide img{
+	width: 100%;
+	height: 300px !important;
+}
+.slide h4{
+	color: #761C19;
+	margin-top: 20px;
+}
+.guangg{
+	position: relative;
+}
+.guangg span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 999;
+	margin-left: -27.5px;
+	margin-top: -15px;
+	animation: move 0.5s linear infinite;
+}
+@keyframes move{
+	0%{
+		transform: scale(1.2);
+	}
+	50%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.2);
+	}
+}
+.main img{
+	width: 100%;
+}
+.lunb{
+	overflow: hidden;
+}
+.lunboimg{
+	width: 100%;
+	height: auto;
+}
+.top{
+	font-family: "宋体";
+	height: auto;
+	background: white;
+	margin-top: 20px;
+	position: relative;
+}
+.bookxq{
+	padding-bottom: 20px;
+	border-bottom: 0.5px #ccc solid;
+	margin-bottom: 30px;
+}
+.thumbnail{
+	overflow: hidden;
+}
+.book_cover{
+	width: 100%;
+	height: 326px !important;
+	transition: 0.3s;
+}
+.book_name{
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	font-size: 20px;
+}
+#bookname{
+	line-height: 25px;
+	z-index: 999;
+}
+.bookimg{
+	width: 144px;
+	height: 192px;
+	box-shadow:0px 0px 1px 1px rgba(0,0,0,0.5) ;
+	margin-right: 30px;
+}
+.buttom-dasc{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
+.book_cover:hover{
+	transform: scale(1.05);
+}
+.shu{
+	transition: 0.3s;
+}
+.shu:hover{
+	transform: scale(1.05);
+}
+.main{
+	height: 475.5px;
+}
+.jiantou{
+	width: 50px;
+	height: 50px;
+	background: darkgray;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 520;
+	bottom: 50px;
+	right: 100px;
+	color: white;
+}
