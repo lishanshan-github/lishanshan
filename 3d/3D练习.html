@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				width: 100%;
+				height: 100%;
+			}
+			.warp{
+				width: 500px;
+				height: 500px;
+				position: relative;
+				transform-style: preserve-3d;
+				margin: 200px 500px;
+				animation: move 5s linear infinite;
+			}
+			@keyframes move{
+				from{
+					transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+				}
+				to{
+					transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+				}
+			}
+			.warp>div{
+				position: absolute;
+				background: rgba(200,200,200,0.5);
+				width: 200px;
+				height: 200px;
+				font-size: 64px;
+				text-align: center;
+				line-height: 200px;
+				top:50%;
+				left: 50%;
+				margin-top: -100px;
+				margin-left: -100px;
+			}
+			.warp>div:nth-of-type(1){
+				transform: translateZ(100px);
+			}
+			.warp>div:nth-of-type(2){
+				transform: translateZ(-100px);
+			}
+			.warp>div:nth-of-type(3){
+				transform: translateX(100px) rotateY(90deg);
+			}
+			.warp>div:nth-of-type(4){
+				transform: translateX(-100px) rotateY(-90deg);
+			}
+			.warp>div:nth-of-type(5){
+				transform: translateY(100px) rotateX(90deg);
+			}
+			.warp>div:nth-of-type(6){
+				transform: translateY(-100px) rotateX(-90deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="warp">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div> 
+		</div>
+	</body>
+</html>
